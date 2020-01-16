@@ -1,0 +1,19 @@
+{
+    "name": "adrien-rosi/aide-travaux",
+    "description": "Aides Financières - Core",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Rosi",
+            "email": "adrienrosi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"AideTravaux\\": ""}
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "minimum-stability": "dev"
+}
