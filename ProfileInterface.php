@@ -2,4 +2,4 @@
 
 namespace AideTravaux;
 
-interface ProjectInterface {}
+interface ProfileInterface {}

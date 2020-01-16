@@ -2,4 +2,4 @@
 
 namespace AideTravaux;
 
-interface ControllerInterface {}
+interface ProjectInterface {}
