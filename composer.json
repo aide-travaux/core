@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"AideTravaux\\": ""}
+        "psr-4": {"AideTravaux\\": "src/"}
     },
     "require": {
         "php": ">=5.3.0"
