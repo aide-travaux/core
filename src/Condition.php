@@ -19,7 +19,9 @@ class Condition
     public function __construct(string $label, ?callable $callback = null)
     {
         $this->label = $label;
-        $this->callback = $callback;
+        $this->callback = ($callback) ? $callback : function() {
+            return null;
+        };
     }
 
     public function getLabel(): string

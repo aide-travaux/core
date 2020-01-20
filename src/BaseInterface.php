@@ -13,10 +13,8 @@ interface BaseInterface
     public function setProfileConditions(): void;
     public function getProfileConditions(?ProfileInterface $profile = null): array;
     public function isProfileEligible(ProfileInterface $profile): bool;
-
     public function setProjectConditions(): void;
     public function getProjectConditions(?ProjectInterface $project = null): array;
     public function isProjectEligible(ProjectInterface $project): bool;
-    
     public function getAmount(ProfileInterface $profile, ProjectInterface $project);
 }

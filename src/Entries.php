@@ -40,4 +40,20 @@ abstract class Entries
         'residence_principale' => 'Résidence principale',
         'residence_secondaire' => 'Résidence secondaire'
     ];
+
+    /**
+     * Catégories ANAH
+     */
+    const ANAH_CATEGORIES = [
+        'modeste' => 'Modeste',
+        'tres_modeste' => 'Très modeste'
+    ];
+
+    /**
+     * Localisation des travaux et prestations
+     */
+    const BUILDING_AREAS = [
+        'partie_privative' => 'Partie privative',
+        'partie_commune' => 'Partie commune'
+    ];
 }

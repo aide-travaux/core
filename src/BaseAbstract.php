@@ -4,10 +4,29 @@ namespace AideTravaux;
 
 abstract class BaseAbstract
 {
+    /**
+     * Nom de l'aide financières
+     */
     const NAME = '';
+
+    /**
+     * Déscription de l'aide financière
+     */
     const DESCRIPTION = '';
+
+    /**
+     * Délai de versement de l'aide financières
+     */
     const DELAY = '';
+
+    /**
+     * Distributeur de l'aide financières
+     */
     const DISTRIBUTOR = '';
+
+    /**
+     * Références légales de l'aide financières
+     */
     const REFERENCES = [];
 
     /**
@@ -20,12 +39,31 @@ abstract class BaseAbstract
      */
     protected static $projectConditions = [];
 
+    /**
+     * Initialize les conditions d'accès à l'aide financières
+     */
     public function __construct()
     {
         $this->setProfileConditions();
         $this->setProjectConditions();
     }
 
+    /**
+     * Retourne l'éligibilité à l'aide financières
+     * @param ProfileInterface
+     * @param ProjectInterface
+     * @return bool
+     */
+    public function isElisible(ProfileInterface $profile, ProjectInterface $project): bool
+    {
+        return $this->isProfileEligible($profile) && $this->isProjectEligible($project);
+    }
+
+    /**
+     * Retourne les conditions d'accès à l'aide financières relatives à la situation du demandeur
+     * @param ProfileInterface|null
+     * @return array
+     */
     public function getProfileConditions(?ProfileInterface $profile = null): array
     {
         if ($profile) {
@@ -41,6 +79,11 @@ abstract class BaseAbstract
           }, self::$profileConditions);
     }
 
+    /**
+     * Retourne l'éligibilité de la situation du demandeur à l'aide financières
+     * @param ProfileInterface
+     * @return bool
+     */
     public function isProfileEligible(ProfileInterface $profile): bool
     {
         foreach (self::$profileConditions as $condition) {
@@ -54,6 +97,11 @@ abstract class BaseAbstract
         return true;
     }
 
+    /**
+     * Retourne les conditions d'accès à l'aide financières relatives aux travaux
+     * @param ProjectInterface|null
+     * @return array
+     */
     public function getProjectConditions(?ProjectInterface $project = null): array
     {
         if ($project) {
@@ -69,6 +117,11 @@ abstract class BaseAbstract
           }, self::$projectConditions);
     }
 
+    /**
+     * Retourne l'éligibilité des travaux à l'aide financières
+     * @param ProfileInterface
+     * @return bool
+     */
     public function isProjectEligible(ProjectInterface $project): bool
     {
         foreach (self::$projectConditions as $condition) {
@@ -82,6 +135,12 @@ abstract class BaseAbstract
         return true;
     }
 
+    /**
+     * Retourne le montant de l'aide financière
+     * @param ProfileInterface
+     * @param ProjectInterface
+     * @return mixed
+     */
     public function getAmount(ProfileInterface $profile, ProjectInterface $project)
     {
         throw new \Exception('This method has to be extended !');
