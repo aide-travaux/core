@@ -145,4 +145,5 @@ abstract class BaseAbstract
     {
         throw new \Exception('This method has to be extended !');
     }
+
 }
