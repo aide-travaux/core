@@ -139,9 +139,9 @@ abstract class BaseAbstract
      * Retourne le montant de l'aide financière
      * @param ProfileInterface
      * @param ProjectInterface
-     * @return mixed
+     * @return float
      */
-    public function getAmount(ProfileInterface $profile, ProjectInterface $project)
+    public function getAmount(ProfileInterface $profile, ProjectInterface $project): float
     {
         throw new \Exception('This method has to be extended !');
     }

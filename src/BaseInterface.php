@@ -16,5 +16,5 @@ interface BaseInterface
     public function setProjectConditions(): void;
     public function getProjectConditions(?ProjectInterface $project = null): array;
     public function isProjectEligible(ProjectInterface $project): bool;
-    public function getAmount(ProfileInterface $profile, ProjectInterface $project);
+    public function getAmount(ProfileInterface $profile, ProjectInterface $project): float;
 }
