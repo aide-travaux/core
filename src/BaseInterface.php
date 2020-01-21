@@ -10,6 +10,7 @@ interface BaseInterface
     public static function getDistributor(): string;
     public static function getReferences(): array;
 
+    public function isEligible(ProfileInterface $profile, ProjectInterface $project): bool;
     public function setProfileConditions(): void;
     public function getProfileConditions(?ProfileInterface $profile = null): array;
     public function isProfileEligible(ProfileInterface $profile): bool;

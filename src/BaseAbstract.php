@@ -54,7 +54,7 @@ abstract class BaseAbstract
      * @param ProjectInterface
      * @return bool
      */
-    public function isElisible(ProfileInterface $profile, ProjectInterface $project): bool
+    public function isEligible(ProfileInterface $profile, ProjectInterface $project): bool
     {
         return $this->isProfileEligible($profile) && $this->isProjectEligible($project);
     }
