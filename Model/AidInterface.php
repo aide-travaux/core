@@ -71,5 +71,4 @@ interface AidInterface
      */
     public function getSteps(): array;
 
-    public function getAmount(ProfileInterface $profile, ProjectInterface $project): float;
 }

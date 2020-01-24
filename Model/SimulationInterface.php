@@ -35,4 +35,10 @@ interface SimulationInterface
      * @return void
      */
     public function resolveSteps(): void;
+
+    /**
+     * Retourne le montant de l'aide financière
+     * @return null|float
+     */
+    public function getAmount(): ?float;
 }
