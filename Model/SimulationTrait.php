@@ -13,11 +13,9 @@ trait SimulationTrait
         $project = $this->getProject();
 
         foreach ($this->steps as $step) {
-            if ($step->getCallback()) {
-                $step->setValue(
-                    $step->getCallback()($profile, $project)
-                );
-            }
+            $step->setValue(
+                $step->getCallback()($profile, $project)
+            );
         }
     }
 
