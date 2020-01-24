@@ -5,10 +5,16 @@ namespace AideTravaux\Utils;
 class Step
 {
     /**
+     * Titre de l'étape de calcul
+     * @property string
+     */
+    private $title;
+
+    /**
      * Description de l'étape de calcul
      * @property string
      */
-    private $label;
+    private $description;
 
     /**
      * Formule de calcul
@@ -22,15 +28,21 @@ class Step
      */
     private $value;
 
-    public function __construct(string $label, callable $callback)
+    public function __construct(string $title, string $description, callable $callback)
     {
-        $this->label = $label;
+        $this->title = $title;
+        $this->description = $description;
         $this->callback = $callback;
     }
 
-    public function getLabel(): string
+    public function getTitle(): string
     {
-        return $this->label;
+        return $this->title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
     }
 
     public function getCallback(): callable
