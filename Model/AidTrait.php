@@ -1,8 +1,11 @@
 <?php
 
-namespace AideTravaux;
+namespace AideTravaux\Model;
 
-trait BaseTrait
+/**
+ * @see AidInterface
+ */
+trait AidTrait
 {
    public static function getName(): string
    {

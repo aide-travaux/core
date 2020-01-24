@@ -1,7 +1,10 @@
 <?php
 
-namespace AideTravaux;
+namespace AideTravaux\Model;
 
+/**
+ * @see ProjectInterface
+ */
 trait ProjectTrait
 {
     public function getBuildingArea(): string

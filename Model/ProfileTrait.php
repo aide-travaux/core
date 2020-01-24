@@ -1,7 +1,10 @@
 <?php
 
-namespace AideTravaux;
+namespace AideTravaux\Model;
 
+/**
+ * @see ProfileInterface
+ */
 trait ProfileTrait
 {
     public function getHousingType(): string

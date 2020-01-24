@@ -1,11 +1,12 @@
 <?php
 
-namespace AideTravaux;
+namespace AideTravaux\Data;
 
 abstract class Entries
 {
     /**
      * Types de logement
+     * @property array
      */
     const HOUSING_TYPES = [
         'maison_individuelle' => 'Maison individuelle',
@@ -15,6 +16,7 @@ abstract class Entries
 
     /**
      * Situations conjugales
+     * @property array
      */
     const MARITAL_STATUS = [
         'celibataire' => 'Célibataire',
@@ -25,6 +27,7 @@ abstract class Entries
 
     /**
      * Statuts des occupants du logement
+     * @property array
      */
     const HOUSING_OCCUPATION_STATUS = [
         'proprietaire_occupant' => 'Propriétaire occupant',
@@ -35,6 +38,7 @@ abstract class Entries
 
     /**
      * Occupations du logement
+     * @property array
      */
     const HOUSING_OCCUPATION_TYPES = [
         'residence_principale' => 'Résidence principale',
@@ -43,6 +47,7 @@ abstract class Entries
 
     /**
      * Catégories ANAH
+     * @property array
      */
     const ANAH_CATEGORIES = [
         'modeste' => 'Modeste',
@@ -51,6 +56,7 @@ abstract class Entries
 
     /**
      * Localisation des travaux et prestations
+     * @property array
      */
     const BUILDING_AREAS = [
         'partie_privative' => 'Partie privative',
