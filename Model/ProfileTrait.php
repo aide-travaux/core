@@ -27,7 +27,7 @@ trait ProfileTrait
         return (float) 1;
     }
 
-    public function getHouselholdIncome(): float
+    public function getHouseholdIncome(): float
     {
         return (float) 0;
     }

@@ -26,7 +26,7 @@ interface ProfileInterface
      * Retourne le revenu du foyer du demandeur
      * @return float
      */
-    public function getHouselholdIncome(): float;
+    public function getHouseholdIncome(): float;
 
     /**
      * Retourne l'âge du bâtiment
