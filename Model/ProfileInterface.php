@@ -5,6 +5,12 @@ namespace AideTravaux\Model;
 interface ProfileInterface
 {
     /**
+     * Retourne le code région du logement
+     * @return string
+     */
+    public function getCodeRegion(): string;
+
+    /**
      * Retourne le statut des occupants du logement
      * @return string
      */

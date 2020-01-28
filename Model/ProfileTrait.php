@@ -7,6 +7,11 @@ namespace AideTravaux\Model;
  */
 trait ProfileTrait
 {
+    public function getCodeRegion(): string
+    {
+        return '';
+    }
+
     public function getHousingType(): string
     {
         return 'Maison individuelle';
