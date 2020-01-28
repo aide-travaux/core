@@ -17,6 +17,18 @@ interface ProfileInterface
     public function getHousingOccupationType(): string;
 
     /**
+     * Retourne le quotient familial du demandeur
+     * @return float
+     */
+    public function getFamilyQuotient(): float;
+
+    /**
+     * Retourne le revenu du foyer du demandeur
+     * @return float
+     */
+    public function getHouselholdIncome(): float;
+
+    /**
      * Retourne l'âge du bâtiment
      * @return int
      */

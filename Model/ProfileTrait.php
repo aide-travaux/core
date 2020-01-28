@@ -22,6 +22,16 @@ trait ProfileTrait
         return 0;
     }
 
+    public function getFamilyQuotient(): float
+    {
+        return (float) 1;
+    }
+
+    public function getHouselholdIncome(): float
+    {
+        return (float) 0;
+    }
+
     public function getHousingOccupationStatus(): string
     {
         return 'Propriétaire occupant';
