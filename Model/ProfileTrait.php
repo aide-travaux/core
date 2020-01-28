@@ -27,7 +27,7 @@ trait ProfileTrait
         return 'Propriétaire occupant';
     }
 
-    public function getHousingOccupationSType(): string
+    public function getHousingOccupationType(): string
     {
         return 'Résidence principale';
     }

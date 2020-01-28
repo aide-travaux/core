@@ -14,7 +14,7 @@ interface ProfileInterface
      * Retourne le type d'occupation du logement
      * @return string
      */
-    public function getHousingOccupationSType(): string;
+    public function getHousingOccupationType(): string;
 
     /**
      * Retourne l'âge du bâtiment
