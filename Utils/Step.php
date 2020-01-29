@@ -1,6 +1,6 @@
 <?php
 
-namespace AideTravaux\Utils;
+namespace AideTravaux\Core\Utils;
 
 class Step
 {

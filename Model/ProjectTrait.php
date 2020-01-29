@@ -1,6 +1,6 @@
 <?php
 
-namespace AideTravaux\Model;
+namespace AideTravaux\Core\Model;
 
 /**
  * @see ProjectInterface
@@ -9,7 +9,7 @@ trait ProjectTrait
 {
     public function getBuildingArea(): string
     {
-        return 'Partie privative';
+        return '';
     }
 
     public function getExpenseShare(): float
@@ -24,7 +24,7 @@ trait ProjectTrait
 
     public function getInsulationArea(): float
     {
-        return (float) 1;
+        return (float) 0;
     }
 
     public function getEquipmentNumber(): int

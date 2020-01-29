@@ -1,6 +1,6 @@
 <?php
 
-namespace AideTravaux\Model;
+namespace AideTravaux\Core\Model;
 
 interface SimulationInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace AideTravaux\Model;
+namespace AideTravaux\Core\Model;
 
-use AideTravaux\Utils\Condition;
-use AideTravaux\Utils\Step;
+use AideTravaux\Core\Utils\Condition;
+use AideTravaux\Core\Utils\Step;
 
 interface AidInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace AideTravaux\Data;
+namespace AideTravaux\Core\Data;
 
 abstract class Entries
 {
@@ -19,10 +19,8 @@ abstract class Entries
      * @property array
      */
     const MARITAL_STATUS = [
-        'celibataire' => 'Célibataire',
-        'marie' => 'Marié(e)',
-        'pacse' => 'Pacsé(e)',
-        'union_libre' => 'Union libre'
+        'celibataire' => 'Célibataire, divorcé ou veuf',
+        'marie' => 'Marié ou pacsé'
     ];
 
     /**

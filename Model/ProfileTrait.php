@@ -1,6 +1,6 @@
 <?php
 
-namespace AideTravaux\Model;
+namespace AideTravaux\Core\Model;
 
 /**
  * @see ProfileInterface
@@ -12,19 +12,9 @@ trait ProfileTrait
         return '';
     }
 
-    public function getHousingType(): string
-    {
-        return 'Maison individuelle';
-    }
-
     public function getMaritalStatus(): string
     {
-        return 'Célibataire';
-    }
-
-    public function getHomeDependents(): int
-    {
-        return 0;
+        return '';
     }
 
     public function getFamilyQuotient(): float
@@ -32,28 +22,43 @@ trait ProfileTrait
         return (float) 1;
     }
 
+    public function getHousehold(): int
+    {
+        return 1;
+    }
+
     public function getHouseholdIncome(): float
     {
         return (float) 0;
     }
 
+    public function getHousingType(): string
+    {
+        return '';
+    }
+
     public function getHousingOccupationStatus(): string
     {
-        return 'Propriétaire occupant';
+        return '';
     }
 
     public function getHousingOccupationType(): string
     {
-        return 'Résidence principale';
+        return '';
     }
 
     public function getBuildingExistence(): int
     {
-        return 20;
+        return 0;
+    }
+
+    public function getBuildingArea(): float
+    {
+        return (float) 0;
     }
 
     public function getAnahCategory(): string
     {
-        return 'Modeste';
+        return '';
     }
 }

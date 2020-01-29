@@ -1,5 +1,5 @@
 {
-    "name": "adrien-rosi/aide-travaux",
+    "name": "aide-travaux/core",
     "description": "Aides Financières - Core",
     "type": "library",
     "license": "MIT",
@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"AideTravaux\\": ""},
+        "psr-4": {"AideTravaux\\Core\\": ""},
         "exclude-from-classmap": [
             "/Tests/"
         ]
