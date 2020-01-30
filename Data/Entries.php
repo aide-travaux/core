@@ -9,9 +9,9 @@ abstract class Entries
      * @property array
      */
     const HOUSING_TYPES = [
-        'maison_individuelle' => 'Maison individuelle',
-        'appartement' => 'Appartement',
-        'immeuble_collectif' => 'Immeuble collectif'
+        'housing_type_1' => 'Maison individuelle',
+        'housing_type_2' => 'Appartement',
+        'housing_type_3' => 'Immeuble collectif'
     ];
 
     /**
@@ -19,8 +19,8 @@ abstract class Entries
      * @property array
      */
     const MARITAL_STATUS = [
-        'celibataire' => 'Célibataire, divorcé ou veuf',
-        'marie' => 'Marié ou pacsé'
+        'marital_status_1' => 'Célibataire, divorcé ou veuf',
+        'marital_status_2' => 'Marié ou pacsé'
     ];
 
     /**
@@ -28,10 +28,10 @@ abstract class Entries
      * @property array
      */
     const HOUSING_OCCUPATION_STATUS = [
-        'proprietaire_occupant' => 'Propriétaire occupant',
-        'proprietaire_bailleur' => 'Propriétaire bailleur',
-        'locataire' => 'Locataire',
-        'loge_gratuitement' => 'Occupant à titre gratuit'
+        'housing_occupation_status_1' => 'Propriétaire occupant',
+        'housing_occupation_status_2' => 'Propriétaire bailleur',
+        'housing_occupation_status_3' => 'Locataire',
+        'housing_occupation_status_4' => 'Occupant à titre gratuit'
     ];
 
     /**
@@ -39,8 +39,8 @@ abstract class Entries
      * @property array
      */
     const HOUSING_OCCUPATION_TYPES = [
-        'residence_principale' => 'Résidence principale',
-        'residence_secondaire' => 'Résidence secondaire'
+        'housing_occupation_type_1' => 'Résidence principale',
+        'housing_occupation_type_2' => 'Résidence secondaire'
     ];
 
     /**
@@ -48,8 +48,8 @@ abstract class Entries
      * @property array
      */
     const ANAH_CATEGORIES = [
-        'modeste' => 'Modeste',
-        'tres_modeste' => 'Très modeste'
+        'anah_category_1' => 'Modeste',
+        'anah_category_2' => 'Très modeste'
     ];
 
     /**
@@ -57,8 +57,8 @@ abstract class Entries
      * @property array
      */
     const BUILDING_AREAS = [
-        'partie_privative' => 'Partie privative',
-        'partie_commune' => 'Partie commune'
+        'building_area_1' => 'Partie privative',
+        'building_area_2' => 'Partie commune'
     ];
 
     /**
