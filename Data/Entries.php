@@ -5,6 +5,25 @@ namespace AideTravaux\Core\Data;
 abstract class Entries
 {
     /**
+     * Catégories ANAH
+     * @property array
+     */
+    const ANAH_CATEGORIES = [
+        'anah_category_1' => 'Modeste',
+        'anah_category_2' => 'Très modeste'
+    ];
+
+    /**
+     * Catégories CEE
+     * @property array
+     */
+    const CEE_CATEGORIES = [
+        'cee_category_1' => 'Classique',
+        'cee_category_2' => 'Précarité énergétique',
+        'cee_category_3' => 'Grande précarité énergétique'
+    ];
+
+    /**
      * Types de logement
      * @property array
      */
@@ -41,15 +60,6 @@ abstract class Entries
     const HOUSING_OCCUPATION_TYPES = [
         'housing_occupation_type_1' => 'Résidence principale',
         'housing_occupation_type_2' => 'Résidence secondaire'
-    ];
-
-    /**
-     * Catégories ANAH
-     * @property array
-     */
-    const ANAH_CATEGORIES = [
-        'anah_category_1' => 'Modeste',
-        'anah_category_2' => 'Très modeste'
     ];
 
     /**
