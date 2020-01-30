@@ -5,18 +5,6 @@ namespace AideTravaux\Core\Model;
 interface SimulationInterface
 {
     /**
-     * Retourne la situation du demandeur
-     * @return ProfileInterface
-     */
-    public function getProfile(): ProfileInterface;
-
-    /**
-     * Retourne le projet de travaux
-     * @return ProjectInterface
-     */
-    public function getProject(): ProjectInterface;
-
-    /**
      * Retourne l'éligibilité de la simulation à l'aide financière
      * @return bool
      */

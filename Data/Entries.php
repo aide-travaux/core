@@ -60,4 +60,16 @@ abstract class Entries
         'partie_privative' => 'Partie privative',
         'partie_commune' => 'Partie commune'
     ];
+
+    /**
+     * Types de projet dans le cadre de l'éco-prêt à taux zéro
+     * @property array
+     */
+    const EPTZ_PROJECT_TYPES = [
+        'project_type_1' => 'Action seule',
+        'project_type_2' => 'Bouquet de 2 travaux',
+        'project_type_3' => 'Bouquet de 3 travaux ou plus',
+        'project_type_4' => 'Performance énergétique globale',
+        'project_type_5' => 'Assainissement non collectif'
+    ];
 }
