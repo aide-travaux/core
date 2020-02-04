@@ -2,4 +2,4 @@
 
 ## Description
 
-Définition des interfaces communes aux modules Aide Travaux.
+Définition des données d'entrée communes aux modules Aide Travaux.

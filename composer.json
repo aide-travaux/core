@@ -10,10 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"AideTravaux\\Core\\": ""},
-        "exclude-from-classmap": [
-            "/Tests/"
-        ]
+        "psr-4": {"AideTravaux\\Core\\": ""}
     },
     "require": {
         "php": ">=5.3.0"
