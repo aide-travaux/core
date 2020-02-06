@@ -3,7 +3,7 @@
 namespace AideTravaux\Core\Tests;
 
 use PHPUnit\Framework\TestCase;
-use AideTravaux\Core\Model\Entries;
+use AideTravaux\Core\Entries;
 
 class EntriesTest extends TestCase
 {
