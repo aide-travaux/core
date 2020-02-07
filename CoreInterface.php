@@ -196,11 +196,6 @@ interface CoreInterface
     public function getNombreFermetures(): int;
 
     /**
-     * Nombre d'équipements installés
-     */
-    public function getNombreEquipement(): int;
-
-    /**
      * Retourne le type de VMC double flux installée
      * @return string
      */
