@@ -15,6 +15,15 @@ abstract class Entries
     /**
      * @property array
      */
+    const ZONES_CLIMATIQUES = [
+        'zone_climatique_1' => 'H1',
+        'zone_climatique_2' => 'H2',
+        'zone_climatique_3' => 'H3'
+    ];
+
+    /**
+     * @property array
+     */
     const CATEGORIES_ANAH = [
         'cateogrie_anah_1' => 'Modeste',
         'cateogrie_anah_2' => 'Très modeste'
