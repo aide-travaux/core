@@ -238,10 +238,16 @@ interface CoreInterface
     public function getLongueurReseauIsolee(): float;
 
     /**
-     * Retourne le montant TTC des travaux déduit des aides financières
+     * Retourne le montant TTC des travaux
      * @return float
      */
     public function getCoutTTC(): float;
+
+    /**
+     * Retourne le montant des aides financières 
+     * @return float
+     */
+    public function getMontantAides(): float;
 
     /**
      * Retourne la quote-part des travaux supportée par le demandeur
